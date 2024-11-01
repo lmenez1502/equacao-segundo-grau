@@ -17,23 +17,6 @@ O módulo readline permite que o programa espere e capture a entrada do usuário
 3.Fechamento do readline: Após capturar todos os valores necessários, usamos rl.close() para finalizar a interface readline.
 
 
-Exemplo do Uso do readline
-
-const readline = require('readline');
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-function getInput(question) {
-    return new Promise((resolve) => {
-        rl.question(question, (input) => {
-            resolve(parseFloat(input));  // Converte a entrada para número decimal
-        });
-    });
-}
-
 A Fórmula de Bhaskara
 
 A fórmula de Bhaskara é usada para resolver equações do segundo grau, que têm a forma:
@@ -48,30 +31,15 @@ Onde:
 
     x representa a variável que queremos encontrar
 
-    Exemplo de Execução
 
-Ao rodar o programa, o usuário será solicitado a inserir os valores de aa, bb e cc. Com base nesses valores, o programa calculará o discriminante e determinará as raízes da equação, exibindo o resultado no terminal.
+Certifique-se de ter o Node.js instalado.
 
-Exemplo de Entrada e Saída
+Salve o código em um arquivo, por exemplo, bhaskara.js.
 
-Digite o valor de a: 1
-Digite o valor de b: -3
-Digite o valor de c: 2
+No terminal, navegue até o diretório onde o arquivo está salvo.
 
-Saída:
+Execute o programa com o comando:
 
-As raízes reais são: 2.00 e 1.00
-
-Como Executar o Programa
-
-    Certifique-se de ter o Node.js instalado.
-
-    Salve o código em um arquivo, por exemplo, bhaskara.js.
-
-    No terminal, navegue até o diretório onde o arquivo está salvo.
-
-    Execute o programa com o comando:
-
-node bhaskara.js
+        node bhaskara.js
 
 O programa solicitará os valores de aa, bb e cc e calculará as raízes da equação, exibindo o resultado no terminal.
