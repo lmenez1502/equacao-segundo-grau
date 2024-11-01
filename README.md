@@ -26,13 +26,12 @@ ax2+bx+c=0
 ax2+bx+c=0
 
 Onde:
-
-    a, b e c são coeficientes conhecidos.
-
-    x representa a variável que queremos encontrar
+a, b e c são coeficientes conhecidos.
+x representa a variável que queremos encontrar
 
 
 Certifique-se de ter o Node.js instalado.
+
 
 Salve o código em um arquivo, por exemplo, bhaskara.js.
 
@@ -42,4 +41,4 @@ Execute o programa com o comando:
 
         node bhaskara.js
 
-O programa solicitará os valores de aa, bb e cc e calculará as raízes da equação, exibindo o resultado no terminal.
+O programa solicitará os valores de a, b e c e calculará as raízes da equação, exibindo o resultado no terminal.
